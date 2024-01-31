@@ -381,6 +381,10 @@
   .clients__description {
     width: 100%;
   }
+  .stats__title {
+    font-size: 3.7rem;
+    width: 100%;
+  }
 }
 @media (max-width: 412px) {
   .banner__title {
