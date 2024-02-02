@@ -50,6 +50,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 130px;
+  transition: all 300ms ease-in-out;
 }
 
 .navbar__logo {
@@ -971,7 +973,6 @@ body {
   margin-top: 5rem;
   padding-top: 0rem;
   padding-bottom: 6rem;
-  text-align: center;
 }
 
 .contact__container {
@@ -984,35 +985,29 @@ body {
   align-items: center;
 }
 .contact__img {
-  width: 100%;
-  height: 60rem;
+  width: 50%;
+  object-fit: cover;
 }
 .contact__header {
-  margin-top: 3rem;
-  margin-top: 10rem;
-  margin-bottom: 6.5rem;
-  position: absolute;
-  top: 0;
+  padding: 4rem 2rem;
 }
 .contact__subtitle {
   display: inline-block;
   font-size: 2rem;
-  color: var(--color-bg-btn);
+  color: var(--color-text-description);
   font-weight: 500;
   margin-bottom: 1.7rem;
 }
 
 .contact__title {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 5.5rem;
   font-size: 6.4rem;
   line-height: 1.2;
   font-weight: 500;
-  color: var(--color-br-services);
-  background-color: var(--color-hover-dark);
-  border: 1px solid var(--color-hover-dark);
-  border-radius: 10px;
+  color: var(--color-title);
+
   padding: 2rem 2rem;
 }
 
@@ -1022,7 +1017,7 @@ body {
   z-index: 1;
   overflow: hidden;
   padding: 2.3rem 5.5rem;
-  background-color: var(--color-title);
+  background-color: var(--color-bg-btn);
   color: var(--color-br-services);
   border-radius: 20px;
   font-weight: 700;
@@ -1031,7 +1026,7 @@ body {
 }
 
 .contact__btn:hover {
-  background-color: var(--color-bg-btn);
+  background-color: var(--color-primary);
 }
 
 .contact__images {
@@ -1450,4 +1445,103 @@ body {
 /* ESTILOS BOTON MODO OSCURO */
 .layout__news {
   display: none;
+}
+
+/* ESTILOS PAGINA HTML DE CONTACTO */
+
+.page__contact {
+  min-width: 100%;
+  min-height: 100rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff; /* Fondo blanco como fallback */
+  background: linear-gradient(
+    to top right,
+    #379abf,
+    #ffffff
+  ); /* Degradado de azul claro a blanco */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Fija el fondo */
+  height: 100%; /* Ajusta la altura al tamaño de la ventana del navegador */
+}
+
+.page__header {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  text-align: center;
+}
+.page__title {
+  font-size: 6rem;
+  color: var(--color-br-services);
+  width: 70%;
+  font-weight: 200;
+}
+
+.contact__cards {
+  display: flex;
+  justify-content: center;
+  margin: 10rem 10rem;
+  gap: 5rem;
+}
+.cards__card {
+  background-color: var(--color-br-services);
+  border-radius: 5rem;
+  overflow: hidden;
+  height: 50rem;
+  width: 45rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.cards__img {
+  height: 25rem;
+}
+.container__icon {
+  width: 100%;
+  height: 23rem;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+.card__icon {
+  font-size: 18rem;
+  color: white;
+  text-align: center;
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+
+.card__title {
+  padding-bottom: 1.5rem;
+  font-weight: 200;
+  font-size: 3rem;
+  color: var(--color-title);
+}
+.card__description {
+  font-size: 2rem;
+  width: 100%;
+  color: var(--color-title);
+  padding-bottom: 2rem;
+}
+
+.card__button {
+  width: 50%;
+  margin-left: 25%;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  font-size: 2.2rem;
+  font-weight: 500;
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-br-services);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
