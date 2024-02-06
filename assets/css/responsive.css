@@ -571,11 +571,26 @@
 }
 @media (min-width: 100px) and (max-width: 380px) {
   .banner__title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .banner__btn {
     padding: 0rem 0rem;
     width: 70%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 450px) {
+  .banner__content {
+    padding: 0rem;
+    width: 30%;
+  }
+  .banner__title {
+    font-size: 2rem;
+  }
+  .banner__btn {
+    padding: 0rem 0rem;
+    width: 70%;
+    font-size: 2rem;
+    width: 100%;
   }
 }
