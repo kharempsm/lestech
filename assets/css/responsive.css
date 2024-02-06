@@ -35,6 +35,11 @@
   }
 }
 
+@media (min-width: 1199px) and (max-width: 1600px) {
+  .layout__banner {
+    min-height: 65rem;
+  }
+}
 @media (max-width: 1200px) {
   .layout {
     min-width: 992px;
@@ -558,4 +563,19 @@
 .contact__container {
   padding-left: 0rem;
   padding-right: 0rem;
+}
+@media (min-width: 1460px) and (max-width: 1600px) {
+  .layout__banner {
+    min-height: 75rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .banner__title {
+    font-size: 1.6rem;
+  }
+  .banner__btn {
+    padding: 0rem 0rem;
+    width: 70%;
+    font-size: 1.5rem;
+  }
 }
