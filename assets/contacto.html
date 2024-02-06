@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/dark.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="./js/menu-mobile.js"></script>
 
     <!-- CARGAR JAVASCRIPT -->
     <script src="./js/menu-mobile.js"></script>
@@ -46,72 +47,17 @@
               <a href="../index.html" class="menu-mobile__link">Inicio</a>
             </li>
             <li class="menu-mobile__item">
-              <a href="#" class="menu-mobile__link"
+              <a href="../index.html#services" class="menu-mobile__link"
                 >Servicios
-                <i class="fa-solid fa-chevron-down menu-mobile__icon"></i
-              ></a>
-              <ul class="menu-mobile__submenu-mobile">
-                <li class="submenu-mobile__item">
-                  <a href="#" class="submenu-mobile__link">Diseño Web</a>
-                </li>
-                <li class="submenu-mobile__item">
-                  <a href="#" class="submenu-mobile__link">Desarrollo web</a>
-                </li>
-                <li class="submenu-mobile__item">
-                  <a href="#" class="submenu-mobile__link">Diseño de apps</a>
-                </li>
-                <li class="submenu-mobile__item">
-                  <a href="#" class="submenu-mobile__link">Programacion</a>
-                </li>
-                <li class="submenu-mobile__item">
-                  <a href="#" class="submenu-mobile__link">Diseño Web</a>
-                </li>
-              </ul>
+              </a>
             </li>
             <li class="menu-mobile__item">
-              <a href="#" class="menu-mobile__link"
-                >Servicios
-                <i class="fa-solid fa-chevron-down menu-mobile__icon"></i
-              ></a>
-              <ul class="menu-mobile__submenu-mobile">
-                <li class="submenu-mobile__item">
-                  <a href="#" class="submenu-mobile__link">Diseño Web</a>
-                </li>
-                <li class="submenu-mobile__item">
-                  <a href="#" class="submenu-mobile__link">Desarrollo web</a>
-                </li>
-                <li class="submenu-mobile__item">
-                  <a href="#" class="submenu-mobile__link">Diseño de apps</a>
-                </li>
-                <li class="submenu-mobile__item">
-                  <a href="#" class="submenu-mobile__link">Programacion</a>
-                </li>
-                <li class="submenu-mobile__item">
-                  <a href="#" class="submenu-mobile__link">Diseño Web</a>
-                </li>
-              </ul>
+              <a href="../index.html#projects" class="menu-mobile__link"
+                >Portafolio
+              </a>
             </li>
             <li class="menu-mobile__item">
-              <a href="#" class="menu-mobile__link"
-                >Blog <i class="fa-solid fa-chevron-down menu-mobile__icon"></i
-              ></a>
-              <ul class="menu-mobile__submenu-mobile">
-                <li class="submenu-mobile__item">
-                  <a href="#" class="submenu-mobile__link">Diseño Web</a>
-                </li>
-                <li class="submenu-mobile__item">
-                  <a href="#" class="submenu-mobile__link">Desarrollo web</a>
-                </li>
-                <li class="submenu-mobile__item">
-                  <a href="#" class="submenu-mobile__link">Diseño de apps</a>
-                </li>
-                <li class="submenu-mobile__item">
-                  <a href="#" class="submenu-mobile__link">Programacion</a>
-                </li>
-                <li class="submenu-mobile__item">
-                  <a href="#" class="submenu-mobile__link">Diseño Web</a>
-                </li>
-              </ul>
+              <a href="#" class="menu-mobile__link">Blog</a>
             </li>
             <li class="menu-mobile__item">
               <a href="#" class="menu-mobile__link">Equipo</a>
@@ -149,10 +95,12 @@
               <a href="../index.html" class="nav__title">Inicio</a>
             </li>
             <li class="nav__item">
-              <a href="#services" class="nav__title">Servicios </a>
+              <a href="../index.html#services" class="nav__title">Servicios </a>
             </li>
             <li class="nav__item">
-              <a href="projects" class="nav__title">Portafolio </a>
+              <a href="../index.html#projects" class="nav__title"
+                >Portafolio
+              </a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__title">Blog</a>
@@ -184,7 +132,7 @@
             <p class="card__description">
               ¿Te gustaría consultar precios y presupuestos?
             </p>
-            <button class="card__button">CONSULTAR</button>
+            <a href="#formulario" class="card__button">CONSULTAR</a>
           </div>
         </div>
         <div class="cards__card">
@@ -198,12 +146,17 @@
               ¿Tienes problemas técnicos con algunos de nuestros producos o
               necesitas ayuda?
             </p>
-            <button class="card__button">PEDIR AYUDA</button>
+            <a
+              href="https://wa.me/56967130498?text=Hola%2C%20necesito%20ayuda%20o%20soporte%20técnico..."
+              target="_blank"
+              class="card__button"
+              >PEDIR AYUDA</a
+            >
           </div>
         </div>
       </div>
     </section>
-    <section class="layout__form">
+    <section class="layout__form" id="formulario">
       <header class="layout__header">
         <h1 class="layout__header--title">COMUNICATE CON NOSOTROS</h1>
       </header>
@@ -236,7 +189,11 @@
             <header class="form__header">
               <h2 class="form__rigth-title">¿Como podemos ayudarte?</h2>
             </header>
-            <form class="contact__form">
+            <form
+              class="contact__form"
+              action="https://formspree.io/f/meqyapqv"
+              method="post"
+            >
               <div class="form__container-2">
                 <section class="form__form--left">
                   <div class="form__group">
@@ -253,7 +210,7 @@
                     <input
                       type="email"
                       class="form__input"
-                      name="name"
+                      name="email"
                       required
                       placeholder="Email"
                     />
@@ -265,10 +222,10 @@
                       class="form__input"
                       name="subject"
                       required
-                      placeholder="numero"
+                      placeholder="Número"
                     />
-                    <label for="numero" class="form__label">
-                      Número de telefono</label
+                    <label for="numero" class="form__label"
+                      >Número de teléfono</label
                     >
                   </div>
                 </section>
