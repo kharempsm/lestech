@@ -1,0 +1,397 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lestech - Servicios de seguridad Electronica</title>
+
+    <!-- cargar fuentes -->
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="./fonts/dmsans/dmsans.css" />
+    <!-- CARGAR ESTILOS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <!-- CARGAR JAVASCRIPT -->
+    <script src="./js/menu-mobile.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let currentIndex = 0;
+            const $carouselInner = $('.carousel-inner');
+            const $carouselItems = $('.carousel-item');
+            const totalItems = $carouselItems.length;
+            const itemWidth = $carouselItems.first().width();
+
+            setInterval(function () {
+                currentIndex = (currentIndex + 1) % totalItems;
+                const newPosition = -currentIndex * itemWidth;
+                $carouselInner.css('transform', 'translateX(' + newPosition + 'px)');
+            }, 3000); // Cambia el valor 3000 para ajustar la velocidad del carrusel
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- MENU NAVEGACION RESPONSIVE -->
+    <div class="menu-mobile">
+        <header class="menu-mobile__header">
+            <div class="menu-mobile__container-logo">
+                <a href="#" class="menu-mobile__link-logo">
+                    <img src="./img/logo-lestech-sf.png" alt="Logo Lestech" class="menu-mobile__logo" />
+                </a>
+            </div>
+
+            <button class="menu-mobile__close">
+                <i class="menu-mobile__icon-close fa-solid fa-xmark"></i>
+            </button>
+        </header>
+
+        <div class="menu-mobile__body">
+            <nav class="menu-mobile__nav">
+                <ul class="menu-mobile__list">
+                    <li class="menu-mobile__item">
+                        <a href="../index.html" class="menu-mobile__link">Inicio</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="../index.html#services" class="menu-mobile__link">Servicios</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="../index.html#projects" class="menu-mobile__link">Portafolio
+                        </a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Blog</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Equipo</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="./contacto.html" class="menu-mobile__link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="layout__menu">
+        <header class="menu__navbar">
+            <div class="navbar__logo">
+                <a href="../index.html" class="navbar__link-logo">
+                    <img src="../assets/img/logo-lestech-sf.png" class="navbar__logo-light" alt="" />
+                </a>
+            </div>
+            <!-- boton de menu responsive  -->
+            <div class="navbar__movile-btn">
+                <button class="mobile-btn__wrap">
+                    <span class="mobile-btn__line"></span>
+                    <span class="mobile-btn__line"></span>
+                    <span class="mobile-btn__line"></span>
+                </button>
+            </div>
+            <!-- NAVEGACION -->
+            <nav class="navbar__var">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__title">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html#services" class="nav__title">Servicios </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html#projects" class="nav__title">Portafolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Equipo</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contacto.html" class="nav__title">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+
+    <!-- SERVICIO CCTV -->
+    <section class="servicios" id="cctv">
+
+        <div class="header_services">
+            <h1 class="header_services-title">Especialistas en CCTV</h1>
+        </div>
+        <div class="service_content">
+            <div class="description_service">
+                <p>Contamos con diversos tipos de soluciones utilizando tecnologías análogas o IP.<br /><br /> Diseño
+                    e implementación de proyectos para monitoreo local y centralizado. Mantención preventiva y
+                    correctiva de sistemas en operación.<br /><br />
+                    Empresas, condominios, casas son parte de nuestros clientes. Brindando soluciones eficaces,
+                    economicas y de gran calidad.
+                    Ofrecemos servicios de monitoreo centralizado.
+                </p>
+                <center /><img class="logo-description" src="../assets/img/logo-lestech-sf.png" alt="">
+                <center />
+            </div>
+
+            <div class="carousel">
+                <div class="">
+                    <div class="carousel-item active">
+                        <img class="carousel-img" src="../assets/img/cctv-1.JPG" alt="Slide 1">
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+
+    <section class="servicios" id="control-acceso">
+
+        <div class="header_services">
+            <h1 class="header_services-title">Control de Acceso</h1>
+        </div>
+        <div class="service_content">
+            <div class="description_service">
+                <p>Control de Acceso permite mantener el control de todas las entradas y salidas (personal, visitantes,
+                    activos, vehículos etc.) administrando efectivamente el ingreso a oficinas, edificios, bodegas o
+                    estacionamientos.
+                </p><br />
+                <ul>
+                    <li><i class="fa-solid fa-check control-icon"></i>Control de entrada y salida de las instalaciones (Oficinas,
+                        residencias, estacionamientos,
+                        bodegas).</li><br />
+                    <li><i class="fa-solid fa-circle-dot control-icon"></i>Sistema Biométrico y/o lectoras de proximidad.</li><br />
+                    <li><i class="fa-solid fa-person control-icon"></i>Control de Asistencia, registro de visitantes. </li><br />
+                    <li><i class="fa-solid fa-car control-icon"></i>Acceso Vehicular.</li><br />
+                    <li><i class="fa-solid fa-phone control-icon"></i>Conexión a Video Portero (Citofonía).</li><br />
+                </ul>
+                <center /><img class="logo-description" src="../assets/img/logo-lestech-sf.png" alt="">
+                <center />
+            </div>
+
+            <div class="carousel">
+                <div class="">
+                    <div class="carousel-item active">
+                        <img class="carousel-img" src="../assets/img/control-acceso.jpg" alt="Slide 1">
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+
+    <section class="servicios" id="control-acceso">
+
+        <div class="header_services">
+            <h1 class="header_services-title">Detección de Incendios</h1>
+        </div>
+        <div class="service_content">
+            <div class="description_service">
+                <p>Contamos con expertos para la implementación de dispositivos que permiten la detección y localización automática del incendio, así como la puesta en marcha de las medidas adecuadas para su control y extinción.
+
+                </p><br />
+                <h3 style="margin-bottom: 10px;">Detección Convencional e inteligente</h3>
+                <ul>
+                    <li><i class="fa-solid fa-fire control-icon"></i>Detectores de humo.</li><br />
+                    <li><i class="fa-solid fa-temperature-three-quarters control-icon"></i>Detectores de temperatura</li><br />
+                    <li><i class="fa-solid fa-server control-icon"></i>Centrales Análogas y Digitales.</li><br />
+                    <li><i class="fa-brands fa-nfc-directional control-icon"></i>Módulos direccionables y de control.</li><br />
+                    
+                </ul>
+                <center /><img class="logo-description" src="../assets/img/logo-lestech-sf.png" alt="">
+                <center />
+            </div>
+
+            <div class="carousel">
+                <div class="">
+                    <div class="carousel-item active">
+                        <img class="carousel-img" src="../assets/img/paradox.jpg" alt="Slide 1">
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+
+    <section class="servicios" id="control-acceso">
+
+        <div class="header_services">
+            <h1 class="header_services-title">Citofonía</h1>
+        </div>
+        <div class="service_content">
+            <div class="description_service">
+                <ul>
+                    <li><i class="fa-solid fa-phone control-icon"></i>Citofonía analógica y digital. Nuevas soluciones en tecnología IP.
+                    </li><br />
+                    <li><i class="fa-solid fa-tty control-icon"></i>Comunicación en voz y video con la central de Citofonía, videos porteros, entrada vehicular.
+                    </li><br />
+                    <li><i class="fa-solid fa-toggle-on control-icon"></i>Interconexión con sistemas de alarma, mediante botón de pánico en citófonos.</li><br />
+                    <li><i class="fa-solid fa-tablet-button  control-icon"></i>Video portero con conexion remota y apertura de puertas
+                    </li><br />
+                    
+                </ul>
+                <center /><img class="logo-description" src="../assets/img/logo-lestech-sf.png" alt="">
+                <center />
+            </div>
+
+            <div class="carousel">
+                <div class="">
+                    <div class="carousel-item active">
+                        <img class="carousel-img" src="../assets/img/video-portero.jpg" alt="Slide 1">
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+
+
+
+
+
+    <footer class="layout__footer">
+        <div class="footer__container">
+            <section class="footer__top">
+                <ul class="footer__social">
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <i class="fa-brands fa-facebook-f social__img"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <i class="fa-brands fa-twitter social__img"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <i class="fa-brands fa-youtube social__img"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <i class="fa-brands fa-linkedin social__img"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <i class="fa-brands fa-instagram social__img"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <i class="fa-brands fa-pinterest social__img"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <i class="fa-brands fa-vimeo-v social__img"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <i class="fa-brands fa-vimeo-v social__img"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer__main">
+                <div class="footer__fleft">
+                    <div class="fleft__container">
+                        <h2 class="fleft__title">Contactanos</h2>
+                        <p class="fleft__subtitle">
+                            Lorem ipsum dolor sit amet ntur animi eligendi eveniet officiis
+                            ill?
+                        </p>
+                        <form class="fleft__form">
+                            <div class="fleft__group">
+                                <span class="fleft__icon">
+                                    <i class="fa-solid fa-envelope-open-text fleft__mail-icon"></i>
+                                </span>
+                                <input type="text" class="fleft__form-control" placeholder="Correo Electronico" />
+                                <button type="submit" class="fleft__btn">Suscribete</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__fright">
+                    <div class="footer__widget footer__widget--50">
+                        <h6 class="widget__title">Servicios</h6>
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Diseño</a>
+                            </li>
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Desarrollo</a>
+                            </li>
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Programacion</a>
+                            </li>
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Marketing</a>
+                            </li>
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Consultoria</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__widget footer__widget--25">
+                        <h6 class="widget__title">Recursos</h6>
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Diseño</a>
+                            </li>
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Desarrollo</a>
+                            </li>
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Programacion</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__widget footer__widget--25">
+                        <h6 class="widget__title">Soporte</h6>
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Contacto</a>
+                            </li>
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Politicas de privacidad</a>
+                            </li>
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Terminos de uso</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="footer__bottom">
+                <div class="footer__copyright">
+                    <span class="copyright__text">&copy; 2023. Todos los derechos reservados.</span>
+                </div>
+                <div class="footer__links">
+                    <ul class="footer__flinks">
+                        <li class="flinks__item flinks__item--separator">
+                            <a href="#" class="flinks__title">Politica de privacidad</a>
+                        </li>
+                        <li class="flinks__item">
+                            <a href="#" class="flinks__title">Terminos de uso</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+
+
+</html>
