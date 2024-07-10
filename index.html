@@ -1,188 +1,178 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lestech - Servicios de seguridad Electronica</title>
 
-    <!-- cargar fuentes -->
-    <link
-      rel="stylesheet"
-      href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./assets/fonts/dmsans/dmsans.css" />
-    <!-- CARGAR ESTILOS -->
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/dark.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lestech - Servicios de seguridad Electronica</title>
 
-    <!-- CARGAR JAVASCRIPT -->
-    <script src="assets/js/menu-mobile.js"></script>
+  <!-- cargar fuentes -->
+  <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/fonts/dmsans/dmsans.css" />
+  <!-- CARGAR ESTILOS -->
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/dark.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+
+  <!-- CARGAR JAVASCRIPT -->
+  <script src="assets/js/menu-mobile.js"></script>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-    <script>
-      $(document).ready(function(){
-        $('.carousel').carousel();
-      });
-    </script>
-  </head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <body>
-    
-    <!-- MENU NAVEGACION RESPONSIVE -->
-    <div class="menu-mobile">
-      <header class="menu-mobile__header">
-        <div class="menu-mobile__container-logo">
-          <a href="#" class="menu-mobile__link-logo">
-            <img src="./assets/img/logo-lestech-sf.png" alt="Logo Lestech" class="menu-mobile__logo">
+  <script>
+    $(document).ready(function () {
+      $('.carousel').carousel();
+    });
+  </script>
+</head>
+
+<body>
+
+  <!-- MENU NAVEGACION RESPONSIVE -->
+  <div class="menu-mobile">
+    <header class="menu-mobile__header">
+      <div class="menu-mobile__container-logo">
+        <a href="#" class="menu-mobile__link-logo">
+          <img src="./assets/img/logo-lestech-sf.png" alt="Logo Lestech" class="menu-mobile__logo">
+        </a>
+      </div>
+
+      <button class="menu-mobile__close">
+        <i class="menu-mobile__icon-close fa-solid fa-xmark"></i>
+      </button>
+    </header>
+
+    <div class="menu-mobile__body">
+      <nav class="menu-mobile__nav">
+        <ul class="menu-mobile__list">
+          <li class="menu-mobile__item">
+            <a href="./index.html" class="menu-mobile__link">Inicio</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a href="#services" class="menu-mobile__link">Servicios</a>
+
+          </li>
+          <li class="menu-mobile__item">
+            <a href="#projects" class="menu-mobile__link">Portafolio </a>
+
+          </li>
+          <!-- <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">Blog</a>
+
+          </li>
+          <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">Equipo</a>
+          </li> -->
+          <li class="menu-mobile__item">
+            <a href="./assets/contacto.html" class="menu-mobile__link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- ESTRUCUTRAL PRINCIPAL -->
+  <div class="layout">
+    <!-- MENU -->
+
+    <section class="layout__menu">
+      <header class="menu__navbar">
+
+        <div class="navbar__logo">
+          <a href="./index.html" class="navbar__link-logo">
+            <img src="./assets/img/logo-lestech.jpg" class="navbar__logo-light" alt="" />
           </a>
         </div>
-
-        <button class="menu-mobile__close">
-          <i class="menu-mobile__icon-close fa-solid fa-xmark"></i>
-        </button>
-      </header>
-
-      <div class="menu-mobile__body">
-        <nav class="menu-mobile__nav">
-          <ul class="menu-mobile__list">
-            <li class="menu-mobile__item">
-              <a href="./index.html" class="menu-mobile__link">Inicio</a>
+        <!-- boton de menu responsive  -->
+        <div class="navbar__movile-btn">
+          <button class="mobile-btn__wrap">
+            <span class="mobile-btn__line"></span>
+            <span class="mobile-btn__line"></span>
+            <span class="mobile-btn__line"></span>
+          </button>
+        </div>
+        <!-- NAVEGACION -->
+        <nav class="navbar__var">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__title">Inicio</a>
             </li>
-            <li class="menu-mobile__item">
-              <a href="#services" class="menu-mobile__link"
-                >Servicios</a>
-              
+            <li class="nav__item">
+              <a href="#services" class="nav__title">Servicios </a>
             </li>
-            <li class="menu-mobile__item">
-              <a href="#projects" class="menu-mobile__link"
-                >Portafolio </a>
-              
+            <li class="nav__item">
+              <a href="#projects" class="nav__title">Portafolio </a>
             </li>
-            <li class="menu-mobile__item">
-              <a href="#" class="menu-mobile__link"
-                >Blog</a>
-              
+            <!-- <li class="nav__item">
+              <a href="#" class="nav__title">Blog</a>
             </li>
-            <li class="menu-mobile__item">
-              <a href="#" class="menu-mobile__link">Equipo</a>
-            </li>
-            <li class="menu-mobile__item">
-              <a href="./assets/contacto.html" class="menu-mobile__link">Contacto</a>
+            <li class="nav__item">
+              <a href="#" class="nav__title">Equipo</a>
+            </li> -->
+            <li class="nav__item">
+              <a href="./assets/contacto.html" class="nav__title">Contacto</a>
             </li>
           </ul>
         </nav>
-      </div>
-    </div>
-    <!-- ESTRUCUTRAL PRINCIPAL -->
-    <div class="layout">
-      <!-- MENU -->
-
-      <section class="layout__menu">
-        <header class="menu__navbar">
-          <div class="navbar__logo">
-            <a href="./index.html" class="navbar__link-logo">
-              <img
-                src="./assets/img/logo-lestech.jpg"
-                class="navbar__logo-light"
-                alt=""
-              />
-            </a>
-          </div>
-          <!-- boton de menu responsive  -->
-          <div class="navbar__movile-btn">
-            <button class="mobile-btn__wrap">
-              <span class="mobile-btn__line"></span>
-              <span class="mobile-btn__line"></span>
-              <span class="mobile-btn__line"></span>
-            </button>
-          </div>
-          <!-- NAVEGACION -->
-          <nav class="navbar__var">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="./index.html" class="nav__title">Inicio</a>
-              </li>
-              <li class="nav__item">
-                <a href="#services" class="nav__title"
-                  >Servicios </a>
-              </li>
-              <li class="nav__item">
-                <a href="#projects" class="nav__title"
-                  >Portafolio </a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__title"
-                  >Blog</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__title">Equipo</a>
-              </li>
-              <li class="nav__item">
-                <a href="./assets/contacto.html" class="nav__title">Contacto</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-      </section>
+      </header>
+    </section>
 
 
 
-      <!-- CAROUSEL -->
+    <!-- CAROUSEL -->
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="background-image: url(./assets/img/bg-tecnology.jpg);">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active" style="position: relative;">
-            <center><img src="./assets/img/camara-prueba.jpg" style="width: 1000px; height:500px; border-radius: 100px;" class="d-block" alt="..."></center>
-            <div class="carousel-info">
-              <div class="caption-text">
-                <h1 class="carousel-title">Especialistas en Instalación de Sistemas de Seguridad</h1>
-                <a href="#projects" class="carousel-button">Ver trabajos</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <center><img src="./assets/img/tablet.jpg" style="width: 1000px; height:500px; border-radius: 100px;" class="d-block" alt="..."></center>
-            <div class="carousel-info">
-              <div class="caption-text">
-                <h1 class="carousel-title">Somos expertos en Seguridad Electrónica y Monitoreo Remoto</h1>
-                <a href="#projects" class="carousel-button">Ver trabajos</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <center><img src="./assets/img/camara-2.jpg" style="width: 1000px; height:500px; border-radius: 100px;" class="d-block" alt="..."></center>
-            <div class="carousel-info">
-              <div class="caption-text">
-                <h1 class="carousel-title">Sistemas de Registro de Asistencia para Empresas</h1>
-                <a href="#projects" class="carousel-button">Ver trabajos</a>
-              </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+      style="background-image: url(./assets/img/bg-tecnology.jpg);">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="position: relative;">
+          <center><img src="./assets/img/tablet.jpg" class="d-block index-img_carousel" alt="..."></center>
+          <div class="carousel-info">
+            <div class="caption-text">
+              <h1 class="carousel-title">Especialistas en Instalación de Sistemas de Seguridad</h1>
+              <a href="#projects" class="carousel-button">Ver trabajos</a>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="carousel-item">
+          <center><img src="./assets/img/camara-2.jpg" class="d-block index-img_carousel" alt="..."></center>
+          <div class="carousel-info">
+            <div class="caption-text">
+              <h1 class="carousel-title">Somos expertos en Seguridad Electrónica y Monitoreo Remoto</h1>
+              <a href="#projects" class="carousel-button">Ver trabajos</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <center><img src="./assets/img/camara-prueba.jpg" class="d-block index-img_carousel" alt="..."></center>
+          <div class="carousel-info">
+            <div class="caption-text">
+              <h1 class="carousel-title">Sistemas de Registro de Asistencia para Empresas</h1>
+              <a href="#projects" class="carousel-button">Ver trabajos</a>
+            </div>
+          </div>
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 
 
-      <!-- BANNER -->
-<!-- 
+    <!-- BANNER -->
+    <!-- 
         <section class="layout__banner">
           <header class="banner__content">
             <h1 class="banner__title">Servicios en Seguridad Electronica</h1>
@@ -195,553 +185,503 @@
         
       </section> -->
 
-      <!-- SERVICIOS -->
+    <!-- SERVICIOS -->
 
-      <section class="layout__services" id="services">
-        <div class="services__grid">
-          <header class="services__header">
-            <p class="services__subtitle">¿Que podemos hacer por ti?</p>
-            <h2 class="services__title">
-              Servicios que te <br />
-              podemos ofrecer
-            </h2>
-          </header>
-          <div class="services__list">
-            <article class="services__service services__service--top">
-              <img class="service__img" src="./assets/img/fondo_tarjet.jpg" alt="">
-              <div class="service__content">
-                <h3 class="service__title">
-                  <p class="service__link">Especialistas en CCTV</p>
-                </h3>
+    <section class="layout__services" id="services">
+      <div class="services__grid">
+        <header class="services__header">
+          <p class="services__subtitle">¿Que podemos hacer por ti?</p>
+          <h2 class="services__title">
+            Servicios que te <br />
+            podemos ofrecer
+          </h2>
+        </header>
+        <div class="services__list">
+          <article class="services__service services__service--top">
+            <img class="service__img" src="./assets/img/fondo_tarjet.jpg" alt="">
+            <div class="service__content">
+              <h3 class="service__title">
+                <p class="service__link">Especialistas en CCTV</p>
+              </h3>
 
-                <a class="service__more" href="./assets/service_cctv.html">Leer mas</a>
-              </div>
-            </article>
-            <article class="services__service sservices__service--top">
-              <img class="service__img" src="./assets/img/fondo_tarjet.jpg" alt="">
-              <div class="service__content">
-                <h3 class="service__title">
-                  <p class="service__link">Control de Acceso</p>
-                </h3>
-                
-
-                <a class="service__more" href="#">Leer mas</a>
-              </div>
-            </article>
-            <article class="services__service services__service--top">
-              <img class="service__img" src="./assets/img/fondo_tarjet.jpg" alt="">
-              <div class="service__content">
-                <h3 class="service__title">
-                  <p class="service__link">Detención de Incendios</p>
-                </h3>
-            
-                <a class="service__more" href="#">Leer mas</a>
-              </div>
-            </article>
-          </div>
-            <div class="services__list">
-            <article class="services__service services__service--top">
-              <img class="service__img" src="./assets/img/fondo_tarjet.jpg" alt="">
-              <div class="service__content">
-                <h3 class="service__title">
-                  <p class="service__link">Especialistas en Citofonía</p>
-                </h3>
-            
-                <a class="service__more" href="#">Leer mas</a>
-              </div>
-            </article>
-            <article class="services__service services__service--top">
-              <img class="service__img" src="./assets/img/fondo_tarjet.jpg" alt="">
-              <div class="service__content">
-                <h3 class="service__title">
-                  <p class="service__link">Sistema de intrusión / Alarma contra robo</p>
-                </h3>
-            
-                <a class="service__more" href="#">Leer mas</a>
-              </div>
-            </article>
-            <article class="services__service services__service--top">
-              <img class="service__img" src="./assets/img/fondo_tarjet.jpg" alt="">
-              <div class="service__content">
-                <h3 class="service__title">
-                  <p class="service__link">Automatización de portones</p>
-                </h3>
-            
-                <a class="service__more" href="#">Leer mas</a>
-              </div>
-            </article>
-
-          </div>
-        </div>
-
-      </section>
-
-      <!-- PROYECTOS -->
-
-      <section class="layout__projects" id="projects">
-        <div class="projects__grid">
-          <header class="projects__header">
-            <p class="projects__subtitle">Nuestros proyectos</p>
-            <h2 class="projects__title">
-              Algunos de nuestros <br />
-              mejores trabajos
-            </h2>
-          </header>
-          <ul class="projects__categories">
-            <li class="categories__item categories__item--active">Todos los trabajos</li>
-            <li class="categories__item">Desarrollo Web</li>
-            <li class="categories__item">Desarollo Movil</li>
-          </ul>
-
-          <div class="projects__all">
-            <article class="projects__project">
-              <div class="projects__container-img">
-                <a href="#" class="project__link-img">
-                  <img
-                    src="./assets/img/project-6.jpg"
-                    class="project__img"
-                    alt="imagen de un proyecto "
-                  />
-                </a>
-              </div>
-
-              <div class="project__content">
-                <h3 class="project__title">
-                  <a href="#" class="project__link-title">Agencia creativa</a>
-                </h3>
-                <div class="project__tags">
-                  <span class="project__tag">Marca</span>
-                  <span class="project__tag">WEB</span>
-                  <span class="project__tag">Aplicacion</span>
-                </div>
-              </div>
-            </article>
-            <article class="projects__project">
-              <div class="projects__container-img">
-                <a href="#" class="project__link-img">
-                  <img
-                    src="./assets/img/project-1.jpg"
-                    class="project__img"
-                    alt="imagen de un proyecto "
-                  />
-                </a>
-              </div>
-
-              <div class="project__content">
-                <h3 class="project__title">
-                  <a href="#" class="project__link-title">Agencia creativa</a>
-                </h3>
-                <div class="project__tags">
-                  <span class="project__tag">Marca</span>
-                  <span class="project__tag">WEB</span>
-                  <span class="project__tag">Aplicacion</span>
-                </div>
-              </div>
-            </article>
-            <article class="projects__project">
-              <div class="projects__container-img">
-                <a href="#" class="project__link-img">
-                  <img
-                    src="./assets/img/project-2.jpg"
-                    class="project__img"
-                    alt="imagen de un proyecto "
-                  />
-                </a>
-              </div>
-
-              <div class="project__content">
-                <h3 class="project__title">
-                  <a href="#" class="project__link-title">Gestion de tareas</a>
-                </h3>
-                <div class="project__tags">
-                  <span class="project__tag">Marca</span>
-                  <span class="project__tag">WEB</span>
-                  <span class="project__tag">Aplicacion</span>
-                </div>
-              </div>
-            </article>
-            <article class="projects__project">
-              <div class="projects__container-img">
-                <a href="#" class="project__link-img">
-                  <img
-                    src="./assets/img/project-3.jpg"
-                    class="project__img"
-                    alt="imagen de un proyecto "
-                  />
-                </a>
-              </div>
-
-              <div class="project__content">
-                <h3 class="project__title">
-                  <a href="#" class="project__link-title">Red Social</a>
-                </h3>
-                <div class="project__tags">
-                  <span class="project__tag">Marca</span>
-                  <span class="project__tag">WEB</span>
-                  <span class="project__tag">Aplicacion</span>
-                </div>
-              </div>
-            </article>
-            <article class="projects__project">
-              <div class="projects__container-img">
-                <a href="#" class="project__link-img">
-                  <img
-                    src="./assets/img/project-4.jpg"
-                    class="project__img"
-                    alt="imagen de un proyecto "
-                  />
-                </a>
-              </div>
-
-              <div class="project__content">
-                <h3 class="project__title">
-                  <a href="#" class="project__link-title">Agencia digital</a>
-                </h3>
-                <div class="project__tags">
-                  <span class="project__tag">Marca</span>
-                  <span class="project__tag">WEB</span>
-                  <span class="project__tag">Aplicacion</span>
-                </div>
-              </div>
-            </article>
-            <article class="projects__project">
-              <div class="projects__container-img">
-                <a href="#" class="project__link-img">
-                  <img
-                    src="./assets/img/project-5.jpg"
-                    class="project__img"
-                    alt="imagen de un proyecto "
-                  />
-                </a>
-              </div>
-
-              <div class="project__content">
-                <h3 class="project__title">
-                  <a href="#" class="project__link-title"
-                    >Portafolio personal</a
-                  >
-                </h3>
-                <div class="project__tags">
-                  <span class="project__tag">Marca</span>
-                  <span class="project__tag">WEB</span>
-                  <span class="project__tag">Aplicacion</span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-
-      
-      </section>
-
-      <!-- ESTADISTICAS -->
-
-      <section class="layout__stats">
-        <div class="stats__container">
-          <header class="stats__header">
-            <h4 class="stats__subtitle">Agencia de diseño y desarrollo</h4>
-            <h2 class="stats__title">Estadisticas de trabajos realizados</h2>
-           
-          </header>
-
-          <div class="stats__progress">
-            <article class="stats__stat">
-              <div class="stat__icon">
-                <img src="./assets/img/icon-7.png" alt="" />
-              </div>
-              <span class="stat__count">15</span>
-              <h6 class="stat__title">Años Activos</h6>
-            </article>
-            <article class="stats__stat">
-              <div class="stat__icon">
-                <img src="./assets/img/icon-8.png" alt="" />
-              </div>
-              <span class="stat__count">+200</span>
-              <h6 class="stat__title">Proyectos realizados</h6>
-            </article>
-            <article class="stats__stat">
-              <div class="stat__icon">
-                <img src="./assets/img/icon-9.png" alt="" />
-              </div>
-              <span class="stat__count">+100</span>
-              <h6 class="stat__title">Clientes</h6>
-            </article>
-            <article class="stats__stat">
-              <div class="stat__icon">
-                <img
-                  src="./assets/img/apple.png
-                "
-                  alt=""
-                />
-              </div>
-              <span class="stat__count">+500</span>
-              <h6 class="stat__title">clientes contentos</h6>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- RESEÑAS -->
-
-      <section class="layout__reviews">
-        <div class="reviews__grid">
-          <header class="reviews__header">
-            <h2 class="reviews__title">Marcas con las que trabajamos</h2>
-            <p class="reviews__description">
-              Siempre ofreciendo lo mejor del mundo electronico a nuestros clientes.
-            </p>
-          </header>
-
-          
-      </section>
-
-      <!-- CLIENTES -->
-
-      <section class="layout__clients">
-        <div class="clients__container">
-          <header class="clients__header">
-            <h4 class="clients__subtitle">Mejores Clientes</h4>
-            <h2 class="clients__title">Hemos creado soluciones para ...</h2>
-            <p class="clients__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              facilis voluptatem vel omnis earum!
-            </p>
-          </header>
-
-          <div class="clients__logo">
-            <article class="clients__item">
-              <img class="clients__img" src="./assets/img/brand-1.png" alt="" />
-            </article>
-            <article class="clients__item">
-              <img class="clients__img" src="./assets/img/brand-1.png" alt="" />
-            </article>
-            <article class="clients__item">
-              <img class="clients__img" src="./assets/img/brand-1.png" alt="" />
-            </article>
-            <article class="clients__item">
-              <img class="clients__img" src="./assets/img/brand-1.png" alt="" />
-            </article>
-          </div>
-        </div>
-        <ul class="clients__client-shapes">
-          <li class="client-shapes__item client-shapes--shape3">
-            <div class="client-shapes__container">
-              <img
-                class="client-shapes__img"
-                src="./assets/img/line-9.png"
-                alt=""
-              />
+              <a class="service__more" href="./assets/service_cctv.html">Leer mas</a>
             </div>
-          </li>
-          </li>
+          </article>
+          <article class="services__service sservices__service--top">
+            <img class="service__img" src="./assets/img/fondo_tarjet.jpg" alt="">
+            <div class="service__content">
+              <h3 class="service__title">
+                <p class="service__link">Control de Acceso</p>
+              </h3>
+
+
+              <a class="service__more" href="../lestech/assets/service_cctv.html#control-acceso">Leer mas</a>
+            </div>
+          </article>
+          <article class="services__service services__service--top">
+            <img class="service__img" src="./assets/img/fondo_tarjet.jpg" alt="">
+            <div class="service__content">
+              <h3 class="service__title">
+                <p class="service__link">Detención de Incendios</p>
+              </h3>
+
+              <a class="service__more" href="../lestech/assets/service_cctv.html#deteccion-incendios">Leer mas</a>
+            </div>
+          </article>
+        </div>
+        <div class="services__list">
+          <article class="services__service services__service--top">
+            <img class="service__img" src="./assets/img/fondo_tarjet.jpg" alt="">
+            <div class="service__content">
+              <h3 class="service__title">
+                <p class="service__link">Especialistas en Citofonía</p>
+              </h3>
+
+              <a class="service__more" href="../lestech/assets/service_cctv.html#citofonia">Leer mas</a>
+            </div>
+          </article>
+          <article class="services__service services__service--top">
+            <img class="service__img" src="./assets/img/fondo_tarjet.jpg" alt="">
+            <div class="service__content">
+              <h3 class="service__title">
+                <p class="service__link">Sistema de intrusión / Alarma contra robo</p>
+              </h3>
+
+              <a class="service__more" href="#">Leer mas</a>
+            </div>
+          </article>
+          <article class="services__service services__service--top">
+            <img class="service__img" src="./assets/img/fondo_tarjet.jpg" alt="">
+            <div class="service__content">
+              <h3 class="service__title">
+                <p class="service__link">Automatización de portones</p>
+              </h3>
+
+              <a class="service__more" href="#">Leer mas</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- PROYECTOS -->
+
+    <section class="layout__projects" id="projects">
+      <div class="projects__grid">
+        <header class="projects__header">
+          <p class="projects__subtitle">Nuestros proyectos</p>
+          <h2 class="projects__title">
+            Algunos de nuestros <br />
+            mejores trabajos
+          </h2>
+        </header>
+        <ul class="projects__categories">
+          <li class="categories__item categories__item--active">Todos los trabajos</li>
+          <!-- <li class="categories__item">Desarrollo Web</li>
+          <li class="categories__item">Desarollo Movil</li> -->
         </ul>
-      </section>
+        <div class="whatsapp_flotante"><a href="https://wa.me/56965275998?text=Me%20gustar%C3%ADa%20consultar%20alguno%20de%20tus%20servicios" target="_blank"><img class="whatsapp_img" src="./assets/img/whatsapp.png" alt=""></a></div>
+        <div class="projects__all">
+          <article class="projects__project">
+            <div class="projects__container-img">
+              <a href="#" class="project__link-img">
+                <img src="./assets/img/project-6.jpg" class="project__img" alt="imagen de un proyecto " />
+              </a>
+            </div>
 
-      <!-- NOTICIAS -->
+            <div class="project__content">
+              <h3 class="project__title">
+                <a href="#" class="project__link-title">Portones Eléctricos</a>
+              </h3>
+              <div class="project__tags">
+                <span class="project__tag">Instalación de distintos tipos Portones Eléctricos <br/><br/></span>
+                <span class="project__tag"></span>
+                <span class="project__tag"></span>
+              </div>
+            </div>
+          </article>
+          <article class="projects__project">
+            <div class="projects__container-img">
+              <a href="#" class="project__link-img">
+                <img src="./assets/img/project-1.jpg" class="project__img" alt="imagen de un proyecto " />
+              </a>
+            </div>
 
-      <section class="layout__news">
-        <div class="news__container">
-          <header class="news__header">
-            <h4 class="news__subtitle">¿Que esta pasando</h4>
-            <h2 class="news__title">Ultimas noticias</h2>
-            <p class="news__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eaquec</p>
+            <div class="project__content">
+              <h3 class="project__title">
+                <a href="#" class="project__link-title">Cableado estructurado y Redes</a>
+              </h3>
+              <div class="project__tags">
+                <span class="project__tag">Implementación eficiente de cableado estructurado y redes para seguridad electrónica.</span>
+                
+              </div>
+            </div>
+          </article>
+          <article class="projects__project">
+            <div class="projects__container-img">
+              <a href="#" class="project__link-img">
+                <img src="./assets/img/project-2.jpg" class="project__img" alt="imagen de un proyecto " />
+              </a>
+            </div>
+
+            <div class="project__content">
+              <h3 class="project__title">
+                <a href="#" class="project__link-title">Sistema Integral de Cámaras de Vigilancia</a>
+              </h3>
+              <div class="project__tags">
+                <span class="project__tag">Ofrecemos soluciones avanzadas en sistemas de cámaras para vigilancia eficaz.</span>
+                <span class="project__tag">WEB</span>
+                <span class="project__tag">Aplicacion</span>
+              </div>
+            </div>
+          </article>
+          <article class="projects__project">
+            <div class="projects__container-img">
+              <a href="#" class="project__link-img">
+                <img src="./assets/img/project-3.jpg" class="project__img" alt="imagen de un proyecto " />
+              </a>
+            </div>
+
+            <div class="project__content">
+              <h3 class="project__title">
+                <a href="#" class="project__link-title">Dispositivos Avanzados de Control de Acceso</a>
+              </h3>
+              <div class="project__tags">
+                <span class="project__tag">Sistemas modernos para control de acceso efectivo y seguro.</span>
+                
+              </div>
+            </div>
+          </article>
+          <!-- <article class="projects__project">
+            <div class="projects__container-img">
+              <a href="#" class="project__link-img">
+                <img src="./assets/img/project-4.jpg" class="project__img" alt="imagen de un proyecto " />
+              </a>
+            </div>
+
+            <div class="project__content">
+              <h3 class="project__title">
+                <a href="#" class="project__link-title">Agencia digital</a>
+              </h3>
+              <div class="project__tags">
+                <span class="project__tag">Marca</span>
+                <span class="project__tag">WEB</span>
+                <span class="project__tag">Aplicacion</span>
+              </div>
+            </div>
+          </article>
+          <article class="projects__project">
+            <div class="projects__container-img">
+              <a href="#" class="project__link-img">
+                <img src="./assets/img/project-5.jpg" class="project__img" alt="imagen de un proyecto " />
+              </a>
+            </div>
+
+            <div class="project__content">
+              <h3 class="project__title">
+                <a href="#" class="project__link-title">Portafolio personal</a>
+              </h3>
+              <div class="project__tags">
+                <span class="project__tag">Marca</span>
+                <span class="project__tag">WEB</span>
+                <span class="project__tag">Aplicacion</span>
+              </div>
+            </div>
+          </article> -->
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- ESTADISTICAS -->
+
+    <section class="layout__stats">
+      <div class="stats__container">
+        <header class="stats__header">
+          <h4 class="stats__subtitle">Agencia de diseño y desarrollo</h4>
+          <h2 class="stats__title">Estadisticas de trabajos realizados</h2>
+
+        </header>
+
+        <div class="stats__progress">
+          <article class="stats__stat">
+            <div class="stat__icon">
+              <img src="./assets/img/icon-7.png" alt="" />
+            </div>
+            <span class="stat__count">15</span>
+            <h6 class="stat__title">Años Activos</h6>
+          </article>
+          <article class="stats__stat">
+            <div class="stat__icon">
+              <img src="./assets/img/icon-8.png" alt="" />
+            </div>
+            <span class="stat__count">+200</span>
+            <h6 class="stat__title">Proyectos realizados</h6>
+          </article>
+          <article class="stats__stat">
+            <div class="stat__icon">
+              <img src="./assets/img/icon-9.png" alt="" />
+            </div>
+            <span class="stat__count">+100</span>
+            <h6 class="stat__title">Clientes</h6>
+          </article>
+          <article class="stats__stat">
+            <div class="stat__icon">
+              <img src="./assets/img/apple.png
+                " alt="" />
+            </div>
+            <span class="stat__count">+500</span>
+            <h6 class="stat__title">clientes contentos</h6>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+
+    <section class="layout__reviews">
+      <div class="reviews__grid">
+        <header class="reviews__header">
+          <h2 class="reviews__title">Marcas con las que trabajamos</h2>
+          <p class="reviews__description">
+            Siempre ofreciendo lo mejor del mundo electronico a nuestros clientes.
+          </p>
+        </header>
+
+
+    </section>
+
+    <!-- CLIENTES -->
+
+    <section class="layout__clients">
+      <div class="clients__container">
+        <header class="clients__header">
+          <h4 class="clients__subtitle">Mejores Clientes</h4>
+          <h2 class="clients__title">Hemos creado soluciones para ...</h2>
+          <p class="clients__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            facilis voluptatem vel omnis earum!
+          </p>
+        </header>
+
+        <div class="clients__logo">
+          <article class="clients__item">
+            <img class="clients__img" src="./assets/img/fritomania.png" alt="" />
+          </article>
+          <article class="clients__item">
+            <img class="clients__img" src="./assets/img/pluspro.png" alt="" />
+          </article>
+          <article class="clients__item">
+            <img class="clients__img" src="./assets/img/banchile.png" style="" alt="" />
+          </article>
+          <article class="clients__item">
+            <img class="clients__img" src="./assets/img/gesys.png" alt="" />
+          </article>
+          <article class="clients__item">
+            <img class="clients__img" src="./assets/img/milanos.png" alt="" />
+          </article>
+          <article class="clients__item">
+            <img class="clients__img" src="./assets/img/bhg.png" alt="" />
+          </article>
+          <article class="clients__item">
+            <img class="clients__img" src="./assets/img/grupocycle.png" alt="" />
+          </article>
+          <article class="clients__item">
+            <img class="clients__img" src="./assets/img/altocomn.png" alt="" />
+          </article>
+        </div>
+      </div>
+      <ul class="clients__client-shapes">
+        <li class="client-shapes__item client-shapes--shape3">
+          <div class="client-shapes__container">
+            <img class="client-shapes__img" src="./assets/img/line-9.png" alt="" />
+          </div>
+        </li>
+        </li>
+      </ul>
+    </section>
+
+    <!-- NOTICIAS -->
+
+    <section class="layout__news">
+      <div class="news__container">
+        <header class="news__header">
+          <h4 class="news__subtitle">¿Que esta pasando</h4>
+          <h2 class="news__title">Ultimas noticias</h2>
+          <p class="news__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eaquec</p>
+        </header>
+        <div class="news__list">
+          <article class="news__new">
+            <div class="new__container-image">
+              <img class="new__img" src="./assets/img/story-1.jpg" alt="Noticia 1">
+            </div>
+            <div class="new__content">
+              <h3 class="new__title">
+                <a href="#" class="new__link">
+                  ¿Como maquetar una web con html 5 ?
+                </a>
+              </h3>
+              <p class="new__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Itrkdjfjhfkjshfjsgfhaque, </p>
+              <a href="#" class="new__more">
+                Leer mas
+                <i class="fa-solid fa-chevron-right new__icon"></i>
+              </a>
+            </div>
+          </article>
+          <article class="news__new">
+            <div class="new__container-image">
+              <img class="new__img" src="./assets/img/story-2.jpg" alt="Noticia 2">
+            </div>
+            <div class="new__content">
+              <h3 class="new__title">
+                <a href="#" class="new__link">
+                  ¿ Como aprender a programar con java script?
+                </a>
+              </h3>
+              <p class="new__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Itrkdjfjhfkjshfjsgfhaque, </p>
+              <a href="#" class="new__more">
+                Leer mas
+                <i class="fa-solid fa-chevron-right new__icon"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section class="layout__contact">
+
+      <div class="contact__container">
+        <div class="contact__content">
+          <header class="contact__header">
+            <h4 class="contact__subtitle">Protegiendo lo que mas nos importa </h4>
+            <h2 class="contact__title">Nuestros Servicios dan seguridad para tu hogar</h2>
+            <a href="./assets/contacto.html#formulario" class="contact__btn">Solicitar Presupuesto</a>
           </header>
-          <div class="news__list">
-            <article class="news__new">
-              <div class="new__container-image">
-                <img class="new__img" src="./assets/img/story-1.jpg" alt="Noticia 1">
-              </div>
-              <div class="new__content">
-                <h3 class="new__title">
-                  <a href="#" class="new__link">
-                    ¿Como maquetar una web con html 5 ?
-                  </a>
-                </h3>
-                <p class="new__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itrkdjfjhfkjshfjsgfhaque, </p>
-                <a href="#" class="new__more">
-                  Leer mas
-                  <i class="fa-solid fa-chevron-right new__icon"></i>
-                </a>
-              </div>
-            </article>
-            <article class="news__new">
-              <div class="new__container-image">
-                <img class="new__img" src="./assets/img/story-2.jpg" alt="Noticia 2">
-              </div>
-              <div class="new__content">
-                <h3 class="new__title">
-                  <a href="#" class="new__link">
-                    ¿ Como aprender a programar con java script?
-                  </a>
-                </h3>
-                <p class="new__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itrkdjfjhfkjshfjsgfhaque, </p>
-                <a href="#" class="new__more">
-                  Leer mas
-                  <i class="fa-solid fa-chevron-right new__icon"></i>
-                </a>
-              </div>
-            </article>
-          </div>
         </div>
+        <img class="contact__img" src="./assets/img/servicios-contacto.jpg" alt="">
 
 
-      </section>
 
-      <!-- CONTACTO -->
+    </section>
 
-      <section class="layout__contact">
-        
-        <div class="contact__container">
-          <div class="contact__content">
-            <header class="contact__header">
-              <h4 class="contact__subtitle">Protegiendo lo que mas nos importa </h4>
-              <h2 class="contact__title">Nuestros Servicios dan seguridad para tu hogar</h2>
-              <a href="./assets/contacto.html#formulario" class="contact__btn">Solicitar Presupuesto</a>
-            </header>
+    <!-- PIE DE PAGINA -->
+
+    <footer class="layout__footer">
+      <div class="footer__container">
+        <section class="footer__top">
+
+          <ul class="footer__social">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <i class="fa-brands fa-facebook-f social__img"></i>
+              </a>
+            </li>
+            <!-- <li class="social__item">
+              <a href="#" class="social__link">
+                <i class="fa-brands fa-twitter social__img"></i>
+              </a>
+            </li> -->
+            <!-- <li class="social__item">
+              <a href="#" class="social__link">
+                <i class="fa-brands fa-youtube social__img"></i>
+              </a>
+            </li> -->
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <i class="fa-brands fa-linkedin social__img"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <i class="fa-brands fa-instagram social__img"></i>
+              </a>
+            </li>
+            <!-- <li class="social__item">
+              <a href="#" class="social__link">
+                <i class="fa-brands fa-pinterest social__img"></i>
+              </a>
+            </li> -->
+            <!-- <li class="social__item">
+              <a href="#" class="social__link">
+                <i class="fa-brands fa-vimeo-v social__img"></i>
+              </a>
+            </li> -->
+            <!-- <li class="social__item">
+              <a href="#" class="social__link">
+                <i class="fa-brands fa-vimeo-v social__img"></i>
+              </a>
+            </li> -->
+          </ul>
+        </section>
+        <section class="footer__main">
+          <div class="footer__fleft">
+            <div class="footer_datos">
+              <i class="fa-solid fa-map-pin icon-footer"></i>
+              <p class="data_footer">Ñuñoa, Santiago de Chile.</p>
+            </div>
+            <div class="footer_datos">
+              <i class="fa-solid fa-phone icon-footer"></i>
+              <p class="data_footer">+56 9 6527 5998</p>
+            </div>
+            <div class="footer_datos">
+              <i class="fa-solid fa-envelope icon-footer"></i>
+              <a class="data_footer" href="">
+                <p>contacto@lestech.cl</p>
+              </a>
+            </div>
           </div>
-          <img class="contact__img" src="./assets/img/servicios-contacto.jpg" alt="">
-          
+          <div class="footer__middle">
 
-          
-      </section>
-
-      <!-- PIE DE PAGINA -->
-
-      <footer class="layout__footer">
-        <div class="footer__container">
-          <section class="footer__top">
-
-            <ul class="footer__social">
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <i class="fa-brands fa-facebook-f social__img"></i>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <i class="fa-brands fa-twitter social__img"></i>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <i class="fa-brands fa-youtube social__img"></i>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <i class="fa-brands fa-linkedin social__img"></i>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <i class="fa-brands fa-instagram social__img"></i>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <i class="fa-brands fa-pinterest social__img"></i>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <i class="fa-brands fa-vimeo-v social__img"></i>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <i class="fa-brands fa-vimeo-v social__img"></i>
-                </a>
-              </li>
+            <h2> Nuestros Servicios</h2>
+            <ul>
+              <li> &#8594 CCVT</li>
+              <li> &#8594 Control de Acceso</li>
+              <li> &#8594 Detección de Incendios</li>
+              <li> &#8594 Citofnía</li>
+              <li> &#8594 Sistemas de Alarmas</li>
+              <li> &#8594 Portones Electricos</li>
             </ul>
-          </section>
-          <section class="footer__main">
-            <div class="footer__fleft">
-              <div class="fleft__container">
-                <h2 class="fleft__title">Contactanos</h2>
-                <p class="fleft__subtitle">Lorem ipsum dolor sit amet ntur animi eligendi eveniet officiis ill?</p>
-                <form class="fleft__form">
-                  <div class="fleft__group">
-                    <span class="fleft__icon">
-                      <i class="fa-solid fa-envelope-open-text fleft__mail-icon"></i>
-                    </span>
-                    <input type="text" class="fleft__form-control" placeholder="Correo Electronico">
-                    <button type="submit" class="fleft__btn">Suscribete</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="footer__fright">
-            <div class="footer__widget footer__widget--50">
-              <h6 class="widget__title">Servicios</h6>
-              <ul class="widget__list">
-                <li class="widget__item">
-                  <a href="#" class="widget__link">Diseño</a>
-                </li>
-                <li class="widget__item">
-                  <a href="#" class="widget__link">Desarrollo</a>
-                </li>
-                <li class="widget__item">
-                  <a href="#" class="widget__link">Programacion</a>
-                </li>
-                <li class="widget__item">
-                  <a href="#" class="widget__link">Marketing</a>
-                </li>
-                <li class="widget__item">
-                  <a href="#" class="widget__link">Consultoria</a>
-                </li>
-                
-              </ul>
-            </div>
-            <div class="footer__widget footer__widget--25">
-              <h6 class="widget__title">Recursos</h6>
-              <ul class="widget__list">
-                <li class="widget__item">
-                  <a href="#" class="widget__link">Diseño</a>
-                </li>
-                <li class="widget__item">
-                  <a href="#" class="widget__link">Desarrollo</a>
-                </li>
-                <li class="widget__item">
-                  <a href="#" class="widget__link">Programacion</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__widget footer__widget--25">
-              <h6 class="widget__title">Soporte</h6>
-              <ul class="widget__list">
-                <li class="widget__item">
-                  <a href="#" class="widget__link">Contacto</a>
-                </li>
-                <li class="widget__item">
-                  <a href="#" class="widget__link">Politicas de privacidad</a>
-                </li>
-                <li class="widget__item">
-                  <a href="#" class="widget__link">Terminos de uso</a>
-                </li>
-                
-              </ul>
-            </div>
-            </div>
-          </section>
-          <section class="footer__bottom">
+          </div>
+          <div class="footer__end">
+            <h1 class="footer_nosotros">Sobre Nosotros</h1>
+            <p class="text_nosotros">"Expertos en soluciones de seguridad electrónica. <br> Protegemos tu hogar y
+              negocio con tecnología de vanguardia."</p>
 
-            <div class="footer__copyright">
-              <span class="copyright__text">&copy; 2023. Todos los derechos reservados.</span>
-            </div>
-            <div class="footer__links">
-              <ul class="footer__flinks">
-                <li class="flinks__item flinks__item--separator">
-                  <a href="#" class="flinks__title">Politica de privacidad</a>
-                </li>
-                <li class="flinks__item">
-                  <a href="#" class="flinks__title">Terminos de uso</a>
-                </li>
-              </ul>
-            </div>
-          </section>
+          </div>
+
+          <img src="../lestech/assets/img/logo-lestech-sf.png" style="width: 200px;" alt="">
+
+
+      </div>
+      <section class="footer__bottom">
+
+        <div class="footer__copyright">
+          <span class="copyright__text">&copy; 2023. Todos los derechos reservados.</span>
         </div>
-      </footer>
-    </div>
-   
-  </body>
+        <div class="footer__links">
+          <ul class="footer__flinks">
+            <li class="flinks__item flinks__item--separator">
+              <a href="#" class="flinks__title">Politica de privacidad</a>
+            </li>
+            <li class="flinks__item">
+              <a href="#" class="flinks__title">Terminos de uso</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+  </div>
+
+</body>
+
 </html>
